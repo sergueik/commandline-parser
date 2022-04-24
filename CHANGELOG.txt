@@ -1,0 +1,398 @@
+### Change Histories
+https://github.com/sergueik/selenium_java.git
+
+`commandline-parser`
+```text
+commit de6086465341cb53705d0c1a87f01c67b948fff7
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Aug 9 00:14:48 2021 +0200
+
+    intermediate revision - replaced commandline parser with stock one, fixed formatting the bash command in cygwin case
+
+commit b6fcca665b4b93be22f905dfffda4d64db9be3d7
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Jun 24 15:36:20 2021 -0400
+
+    intermediate revision - added setters and getters around apache commons CommandLineParser, some newunit tests tuned  to just pass, the details to yet be found
+
+commit 318dafa8d4f62bc0421f3a288fd478210b744765
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu May 27 01:10:14 2021 +0200
+
+    updated dependedncy version per dependabot. for Edge downloader, also fixed real download page title test. note: still need to upadtenew cached download page and rework its tests
+
+commit 799ec09a17eb710e68d8f05284792883c74bb054
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed May 12 02:47:00 2021 -0400
+
+    interemdiate revision - added few reqular tests
+
+commit 02628f773a17523de080d1bf5ad114bb572ad384
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue May 11 19:22:08 2021 -0400
+
+    intermediate revision - added Apache commons CLI CommandLineParser example, and exit interseption
+
+commit a81ae70d3e50a19f7b666613d8b9fa4765850230
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Apr 15 21:37:10 2021 -0400
+
+    intermeiate revision - added a handful of JSON serialization test variations
+
+commit e096ed0a76f391b7233c389e84ead65d1b682936
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Apr 15 01:50:09 2021 -0400
+
+    updated documentation
+
+commit 30dcb73ea6a4e4cc6efd7e00b9242351addef6ec
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Feb 23 00:39:23 2021 -0500
+
+    intermediate revision - added separate tests for GSON / JSON and NONE in URI file processing
+
+commit c9031d862e5fae4fe97c29d6e4a836eb63590aa5
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Feb 22 07:10:37 2021 +0100
+
+    intermediate revision - added getters and settrs for union Lib to prevent JSON serialization attempt of plain content for http:// option value case
+
+commit d8a06ec39545c4a4f3606ff5616a06b8fb905eec
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Feb 1 16:40:59 2021 -0500
+
+    removed quick check
+
+commit d35e91227a353fab16fd80a46fcd270ea6b641a1
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Feb 1 15:28:18 2021 -0500
+
+    added quick check
+
+commit 7c261bc2de1b2c1faa2a4138324d2100e7e466e1
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Dec 8 23:51:08 2020 -0500
+
+    intermediate revision - added README with the usage
+
+commit 434067cd5e0c93b5425f1d2ae00dffbcc7450bb4
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sat Nov 28 01:23:45 2020 -0500
+
+    intermediate revision - added readJSONArray for future use
+
+commit c1b57b6c3e418ba3cbfd2a7f05eb7f1fa450e579
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Nov 25 13:27:00 2020 -0500
+
+    intermedate revision - refactoring JsonReader and associated test
+```
+* `commandline_parser`
+
+```text
+commit 484b178cf93ef21b361aea5eaae279b9fa13deca
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Nov 24 02:24:11 2020 +0100
+
+    interediate reviion - added RAW json (Lib.NONE) option, refactored tests
+
+commit 4e0534334fc4dad13b7a6cdfbda8d6764f8fee46
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Nov 24 02:02:38 2020 +0100
+
+    intermediate revision - added JSON
+
+commit 9a05ad78c326149c0f4e57558190cb6064c8f00a
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Nov 24 01:19:14 2020 +0100
+
+    removed unused resources inherited from parent project
+
+commit c8f181b01cf881ed4bcbeff0e6c051ba97836dae
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Nov 23 15:43:47 2020 -0500
+
+    interediate revision - added the JSON URI processing
+
+commit d285dd963ef64263a28f108bbec507404893cb78
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Nov 12 00:59:49 2020 +0100
+
+    intermediate revision - removed the old_parse and minor code cleanup
+
+commit a3b6d4f362397fc321f1f27d015301c044bf3833
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Nov 12 00:38:30 2020 +0100
+
+    intermediate revision - removed unneded resources from unrelated project, added last argument dash support, fixes of processing logic and unit tests on pass-through
+
+commit b37f27d748b44bc249eaf894035bffa942a0f578
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Nov 10 15:28:17 2020 -0500
+
+    made commandeline parser separate module to avoid code duplication
+```
+`xslt-example`
+
+```text
+commit aea8476dc845e27262c73bcf65a3b2282d2043ed
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Nov 5 00:03:41 2020 -0500
+
+    intermediate revision - added tests of processApply method
+
+commit e2fa4e468f6171504dcbfd61f0f59d0b60756cab
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Nov 4 19:23:37 2020 -0500
+
+    intermediate revision - added experimental "-apppy" argument parsing
+
+commit 6cc21828af0c5ee4beb2d4090546b122e392a12b
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sun Nov 1 01:01:52 2020 -0400
+
+    just better variable naming
+
+commit b8aa0b341146fc1458a8e6d865dd51e66c21eec0
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Oct 28 23:39:44 2020 -0400
+
+    added suppress warning of deprecated hamcrest methods, and type modifier for generic abstractmap to have method signature uniform
+
+commit d9659e9e500fcb069b7c3694fd0be8e851ad7cff
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Oct 29 02:55:51 2020 +0100
+
+    intermediate revision - added embedded multi arg test, k8 label-style
+
+commit 5cd8b6851d1c80c306ea9d63ad5ffa6583f5b0c8
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Oct 14 01:28:52 2020 +0200
+
+    Bump junit to 4.13.1
+
+commit 337e65e03620bb258e1f6ef8ed378cc9311611e0
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Oct 7 23:57:26 2020 -0400
+
+    initial snapshot of a 5 y old project with otdated  net.masterthought.cucumber.ReportBuilder signature, but working with its dependendies, WIP
+
+commit e19d8f1cec7c8db2628ca2353ab9a19b4bf88ab9
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Jul 23 05:06:09 2020 +0200
+
+    intermediate revision -  added multi parse call test
+
+commit 765947dfc9a912ab10667403d537b37a416cb517
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Jun 29 20:39:08 2020 -0400
+
+    intermedite revision - verified flags go independenlty
+
+commit c9b7e94b5e7bbf7e216ccdfa1e5c18e98f69e9bb
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sun Jun 28 00:23:25 2020 -0400
+
+    intermediate revision - added "@datafile" argument processing
+
+commit 9eb8642a4aa5c2d8e4e71ede9c7962951d7a496f
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sat Jun 27 14:19:23 2020 -0400
+
+    intermediate revision - added env: parameters detection resulting  in System.getenv invocation, with unit test, note - some instability to already working tests observed
+
+commit 1e260a7857c0aabc15fa597384f68849234a2f9f
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sat May 9 18:14:20 2020 -0400
+
+    fixed the bug in the logic of handling the failed similar tag search
+
+commit 20080f6a2be4f5b6273514c2412e36d715b6419a
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed May 6 00:22:48 2020 -0400
+
+    updated README
+
+commit ed4647a457f647d693e805072fd7eddd143c66f2
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Apr 29 15:47:06 2020 -0400
+
+    resurrected and renamed the class TransformDocument, added a few promising stylsheets
+
+commit 0a3c195bb777a14ba1253778ce605dfb49b08627
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Apr 29 00:14:30 2020 -0400
+
+    intermediate revision - do not tolerate nested json
+
+commit 2afc531311ac72b890b6a0ded091f586a8db65c7
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Apr 28 20:16:37 2020 -0400
+
+    intermediate revision - added very basic JSON extractExtraArgs method to avoid taking a dependency
+
+commit 1352c13be3f63c26946af4cbe5a0a3a44c9d837b
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sun Apr 26 18:25:53 2020 +0200
+
+    intermediatr revision - removed java warning
+
+commit 1cd23efcfb181164ea53a0ad5a9b5209e645b199
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Apr 15 03:02:02 2020 +0200
+
+    intermdiate revision - added main class and jar manifest
+
+commit 81db6d2641a192b6a89a6b8f08e51891afdfb774
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Fri Apr 3 05:01:08 2020 +0200
+
+    fixed the code defect
+
+commit e2e071640882f5ac4d16c5466a178f2c152a0722
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Fri Apr 3 02:07:06 2020 +0200
+
+    intermediate revision -  spotted a problem with searching DOM and added a set of tests, including the failing one
+
+commit 7da1c1b4d5fb45e035c5a301ef577f8c8b76ad07
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Apr 2 15:16:15 2020 -0400
+
+    intermediate revision - added RemoveNode class
+
+commit 6cddf56a4138b99559ee9ae6c892042fe33b32cb
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Mar 31 03:12:38 2020 +0200
+
+    intermediate revision - validate the presence of the node before adding it
+
+commit 7db41fab86b66e7d6b1b41c5a4072d4ca50b12e7
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Mar 31 02:54:41 2020 +0200
+
+    intermediate revision - added searchNode and unit test of the same, added more replaceXPath overloads
+
+commit 0e0ef00b8a86f9c453bd14fd4fe86022434a59ab
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Mar 30 05:17:26 2020 +0200
+
+    intermediate revision - added replaceXPath for name and (optionally) tags and name
+
+commit 504ec24b40f18364a3e552c1116f84373b5890e7
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Mon Mar 30 03:23:39 2020 +0200
+
+    intermediate revision - fixed and updated argument usage, restored CommentNode class
+
+commit 163e88b9689ce1b95b8a7018da569692c5f50272
+Merge: 50b3627f b3dd2590
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sat Mar 28 00:56:58 2020 -0400
+
+    merged workspaces
+
+commit b3dd2590a6f12fdb7759162f9f532beae09369cc
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sat Mar 28 04:42:38 2020 +0100
+
+    intermediate revision - covered not foundanchor DOM node case, parameterized tag 1,2,3 and the name
+
+commit af96b04bb0b242ae6e05335f61a4eb619eef2fdf
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sat Mar 28 03:59:47 2020 +0100
+
+    intermediate revision - refactored to have a DOM subtree inhection methog
+
+commit 50b3627fa1204747ccd871eac876ecdab80d0da9
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Fri Mar 27 19:16:45 2020 -0400
+
+    intermediate revision - added commandlineageumen parser to the filter injector
+
+commit 4fd6269f42f5ea5fe7cb0bd571e75092451ad24e
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Fri Mar 27 18:00:45 2020 -0400
+
+    intermediate revision - added unit tests to explore the behavior of the home brewed CommandLineParser class
+
+commit 8b8a41885779f7e3578ac9eb27b2552bd3040122
+Merge: b545258a a9a26504
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Fri Mar 27 17:58:55 2020 -0400
+
+    Merge branch 'master' of https://github.com/sergueik/selenium_java
+
+commit b545258ac83d93ee44764a24fac1d1a980cd9c5a
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Fri Mar 27 15:34:35 2020 -0400
+
+    intermediate revision - added a very lean and simiplified command line parser class
+
+commit a9a265044b156eec1e4128c1fcd7cae4cbf9e0cd
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Fri Mar 27 01:39:58 2020 +0100
+
+    intermediate revision  - added DOM import/appendChild
+
+commit 9a47c797e91ed25bf71b3ce8493f4ffa5751646f
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Mar 26 16:09:02 2020 -0400
+
+    intermediate revision - labor intensive way of building extra elements through designated Java class, not mating two documents
+
+commit def6e48ed73a2a0de2a453078cbf58359970becd
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Thu Mar 26 15:01:30 2020 -0400
+
+    interediate revision - converting into a one task tool to modify tomcat XML during Docker build
+
+commit 4d4cc8caafc4670f31ab3df5ee8364cfb79a45b9
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Mar 24 01:03:04 2020 +0100
+
+    intermediate revision - added example and limitation description
+
+commit 2ec2b2295ada9e9b5d6f7366055404a64f5301cb
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Sun Mar 8 20:35:41 2020 -0400
+
+    intermediate revision - collapse temporary variables of the utility script, added example that was known to corrupt the indentation
+
+commit 3ea00fa2cd7c3e855622450dea8e613d585f8a1f
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Mar 4 17:31:37 2020 +0100
+
+    intermediate revision - separated "create" and "remove" samples
+
+commit ba13f00cb4a4701d8394d83d43c35827e9cba43f
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Mar 4 01:02:50 2020 -0500
+
+    intermediate revision - identified the node to comment through child node text, get rid of saxon dependency that is noot required
+
+commit 91fed4f3419d0bdedd8e4d6d0ceb5f8ade43d959
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Wed Mar 4 00:48:59 2020 -0500
+
+    intermediate revision - added node comment example
+
+commit 7dd7952199ea9df1a56211ee22566aa458a589f4
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Mar 3 11:15:02 2020 -0500
+
+    intermediate revision - applied the stack overflow fix of the xmlns unfriendlty behavior
+
+commit af570818daff3357528f486bb32122e8b50490a6
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Mar 3 00:01:54 2020 -0500
+
+    intermediate revision, updated documentation, added a near identity styleshee example
+
+commit 6976b646e66a66fe413cd45531ca27179903a485
+Author: Serguei Kouzmine <kouzmine_serguei@yahoo.com>
+Date:   Tue Jan 14 18:07:19 2020 -0500
+
+    initial revision
+
+```
