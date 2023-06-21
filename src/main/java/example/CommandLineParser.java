@@ -2,6 +2,8 @@ package example;
 /**
  * Copyright 2020,2021 Serguei Kouzmine
  */
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
