@@ -1,6 +1,6 @@
 ### Info
 
-This directory contains CommandLineParser class. The original development location is `commandline-parser` directory in [selenium_java](https://github.com/sergueik/selenium_java.git)
+This directory contains CommandLineParser class. The original development location is `commandline-parser` directory in __selenium_java__ [repository](https://github.com/sergueik/selenium_java/tree/master/commandline-parser)
 
 ### Usage
 
