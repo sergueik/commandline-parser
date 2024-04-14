@@ -82,6 +82,75 @@ c.setValueFormat("GSON")
 ```
 The file or URI contents are still  returned as a string data, but internally it is validated  to be serializalbe valid json object.
 the Kubernetes-stye YAML support is a work in progres, see the details in the code.
+### TODO
+on Linux failing hard
+```text
+[INFO] Running example.CommonsCommandLineParserTest
+null
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 33, Failures: 0, Errors: 0, Skipped: 4
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.503 s
+[INFO] Finished at: 2024-04-13T20:04:55-04:00
+[INFO] Final Memory: 15M/60M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.2:test (default-test) on project commandline-parser: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/sergueik/src/commandline-parser/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+[ERROR] Command was /bin/sh -c cd /home/sergueik/src/commandline-parser && /usr/lib/jvm/java-11-openjdk-amd64/bin/java -jar /home/sergueik/src/commandline-parser/target/surefire/surefirebooter6619296238443313076.jar /home/sergueik/src/commandline-parser/target/surefire 2024-04-13T20-04-52_342-jvmRun1 surefire4143110887948661821tmp surefire_015204690934999595245tmp
+[ERROR] Process Exit Code: 0
+[ERROR] Crashed tests:
+[ERROR] example.CommonsCommandLineParserTest
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+[ERROR] Command was /bin/sh -c cd /home/sergueik/src/commandline-parser && /usr/lib/jvm/java-11-openjdk-amd64/bin/java -jar /home/sergueik/src/commandline-parser/target/surefire/surefirebooter6619296238443313076.jar /home/sergueik/src/commandline-parser/target/surefire 2024-04-13T20-04-52_342-jvmRun1 surefire4143110887948661821tmp surefire_015204690934999595245tmp
+[ERROR] Process Exit Code: 0
+[ERROR] Crashed tests:
+[ERROR] example.CommonsCommandLineParserTest
+[ERROR] at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:669)
+[ERROR] at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:282)
+[ERROR] at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:245)
+[ERROR] at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1183)
+[ERROR] at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1011)
+[ERROR] at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:857)
+[ERROR] at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+[ERROR] at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+[ERROR] at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+[ERROR] at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+[ERROR] at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+[ERROR] at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+[ERROR] at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ERROR] at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ERROR] at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ERROR] at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+```
+
 ### See Also
  * [introduction to Creational Design Patterns](https://www.baeldung.com/creational-design-patterns)
   * Apache CLI CommandLineParser [tutorial](https://commons.apache.org/proper/commons-cli/usage.html)

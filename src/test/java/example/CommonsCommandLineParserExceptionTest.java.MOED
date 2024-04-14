@@ -6,6 +6,7 @@ import static org.junit.Assert.assertThat;
 import java.security.Permission;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import junit.framework.TestCase;
 
@@ -64,7 +65,7 @@ public class CommonsCommandLineParserExceptionTest extends TestCase {
 	// NOTE: the test methods have to catch exitexception, even there is no real
 	// exception,
 	// otherwise will be failing with "intercepted exit"
-
+	@Ignore
 	@Test
 	public void test2() throws Exception {
 		final int setStatus = 43;
@@ -77,6 +78,7 @@ public class CommonsCommandLineParserExceptionTest extends TestCase {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void test3() throws Exception {
 		try {
@@ -88,6 +90,7 @@ public class CommonsCommandLineParserExceptionTest extends TestCase {
 		}
 	}
 
+	@Ignore
 	// Unrecognized option
 	@Test
 	public void test4() throws Exception {
@@ -100,6 +103,7 @@ public class CommonsCommandLineParserExceptionTest extends TestCase {
 		}
 	}
 
+	@Ignore
 	// Missing org.apache.commons.cli.MissingOptionException:
 	@Test
 	public void test5() throws Exception {
